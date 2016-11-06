@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+html,
+body {
+	height: 100%;
+	width: 100%;
+	zoom: 1;
+}
+.body{
+	overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Open Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 300;
+}
+.row{
+	margin: 0 !important;
+}
+.left-icons {
+	width: 100px;
+	position: absolute;
+	background: #67B26F;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #67B26F, #4ca2cd);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #67B26F, #4ca2cd);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	top: 0;
+	bottom: 0;
+}
+
+ul.dash-icons {
+	li {
+		float: left;
+		width: 100px;
+		height: 100px;
+		opacity: 0.7;
+		&.selected {
+			background: rgba(255, 255, 255, 0.12);
+			opacity: 1;
+		}
+	}
+}
+
+.icon-calendar {
+	width: 40px;
+	height: 40px;
+	background: url('../images/cal.png') no-repeat;
+	background-position: 0 3px;
+	margin: 30px auto;
+}
+
+.icon-activity {
+	width: 40px;
+	height: 40px;
+	background: url('../images/activity.png') no-repeat;
+	background-position: 0 8px;
+	margin: 30px auto;
+}
+
+.icon-message {
+	width: 40px;
+	height: 40px;
+	background: url('../images/message.png') no-repeat;
+	background-position: 0 3px;
+	margin: 30px auto;
+}
+
+.icon-pref {
+	width: 40px;
+	height: 40px;
+	background: url('../images/pref.png') no-repeat;
+	background-position: 3px 0;
+	margin: 30px auto;
+}
+
+.icon-doc {
+	width: 40px;
+	height: 40px;
+	background: url('../images/doc.png') no-repeat;
+	background-position: 3px 0;
+	margin: 30px auto;
+}
+
+.adduser {
+	width: 40px;
+	height: 40px;
+	background: url('../images/adduser.png') no-repeat;
+	background-position: 0 3px;
+    bottom: 30px;
+    position: absolute;
+    left: 30px;
+}
+
+.primary-photo {
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.name-overlay{
+		position: absolute;
+    	bottom: 0;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+100&0+0,0.7+100 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+		padding: 15px 30px;
+		width: 100%;
+		color: #FFF;
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 38px;
+	}
+}
+
+#sidebar-menu {
+	ul {
+		float: left;
+		width: 100%;
+		li {
+			width: 50%;
+			float: left;
+			padding: 15px 0;
+			
+			&:nth-child(1), &:nth-child(2){
+				
+			}
+			.big-text {
+				width: 100%;
+				text-align: center;
+				font-size: 30px;
+				font-weight: 300;
+				color: #FFF;
+				.co{
+					font-size: 18px;
+					margin-left: 4px;
+				}
+			}
+			.small-text {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+.right_col{
+	.right-top{
+		.tag-message{
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 40px;
+			color: rgba(0,0,0,0.5);
+		}
+		.great{
+			  background: -webkit-linear-gradient(#67B26F, #4ca2cd);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+		}
+		.tagline{
+			font-size: 44px;
+			font-weight: 300;
+			text-transform: none;
+			color: rgba(0,0,0,0.8);
+		}	
+		.add-goal{
+			width: 160px;
+    		height: 48px;
+			background: #67B26F;
+			/* fallback for old browsers */
+			background: -webkit-linear-gradient(to bottom, #67B26F, #56A8A9);
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to bottom, #67B26F, #56A8A9);
+			color: #FFF;
+			position: absolute;
+			border-radius: 40px;
+			font-size: 18px;
+			font-weight: 300;
+			box-shadow: none;
+			top: 55px;
+			border: none;
+			right: 45px;
+		}
+	}
+	
+	.health-section{
+		padding: 40px 0;
+		width: 100%;
+		float: left;
+		&.section-many{padding:0;}
+		.subsection{
+			padding: 40px 0;
+			.subsection-container{
+				.section-title{
+					text-align: center;
+					padding: 0;
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				.feet-icon{
+					width: 32px;
+					height: 32px;
+					background: url('../images/feet.png') no-repeat;
+					opacity: 0.19;
+					position: absolute;
+					margin-left: -63px;
+    				margin-top: 18px;
+					left: 50%;
+				}
+				.calories-icon{
+					width: 32px;
+					height: 32px;
+					background: url('../images/calories.png') no-repeat;
+					opacity: 0.19;
+					position: absolute;
+					margin-left: -73px;
+    				margin-top: 18px;
+					left: 50%;
+				}
+				.big-number{
+					font-size: 44px;
+					font-weight: 300;
+					color: #555;
+					text-align: right;
+					position: relative;
+					display: block;
+					width: 120px;
+					margin: 0 auto;
+				}
+				.small-text{
+					font-size: 24px;
+					color: #000;
+					opacity: 0.5;
+				}
+			}
+		}
+		.section-title{
+			padding-left: 40px;
+			font-size: 22px;
+			color: #888;
+			font-weight: 300;
+		}
+		
+		border-bottom: 1px solid #EEE;
+	}
+}
+//Modal
+.modal-content{
+	overflow: hidden;
+	border: 1px solid #888;
+	button, input, select, textarea{
+		height: 40px;
+	}
+}
+.modal-header{
+	background: #67B26F;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #67B26F, #56A8A9);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #67B26F, #56A8A9);
+	.modal-title{
+		color: #FFF;
+		padding: 2px 15px;
+	}
+	.close{
+		color: #FFF;
+	}
+}
+.btn{
+	border-radius: 40px !important;
+	padding: 10px 20px;
+}
+.btn-primary{
+	background: #67B26F;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #67B26F, #56A8A9);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #67B26F, #56A8A9);
+	border: 0;
+}
+.modal-body{
+	font-size: 16px;
+	color: #444;
+    padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	label{font-weight: 400;}
+	
+	select{
+		width: 100%;
+	}
+	.form-group{
+		margin-bottom: 25px;
+	}
+}
+.modal-footer{
+	padding-right: 30px;
+}
+
+
+//CALENDAR PAGE
+.calendar{
+	width: 780px;
+	margin: 0 auto;
+	.old{background: #284E91 !important;}
+	.old{background: #284E91 !important;}
+	.mom{background: #AC4EBB !important;}
+	.dad{background: #D35400 !important;}
+	.old, .mom, .dad{
+		color: #FFF !important;
+		cursor: pointer;
+		border: none !important; 
+	}
+}
+#calendarTitle, #calendarTabs1, .tab-name, .calendar-nav, .date-controls img{
+	display: none;
+}
+.calendar-embed{
+}
+
+
+//My Doctors
+
+.my-doc{
+	width: 275px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+	li{
+		float: left;
+		list-style: none;
+		position: relative;
+		img{
+			border-radius: 50%;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			width: 60px;
+			height: 60px;
+		}
+		.notification{
+			width: 14px;
+			height: 14px;
+			background: red;
+			border: 2.5px solid white;
+			position: absolute;
+			border-radius: 50%;
+			right: 10px;
+		}
+	}
+}
+.doc-near-me{
+	width: 260px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+	li{
+		float: left;
+		list-style: none;
+		position: relative;
+		img{
+			float: left;
+			margin-right: 4px;
+			margin-bottom: 4px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+#map{
+	width: 500px;
+	height: 500px;
+}
+.circles{
+	li{
+		padding: 20px 0 0 10px !important;
+		width: 60px !important;
+		float: left;
+		img{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin: auto;
+		}
+	}
+}
+.main_menu_side{
+	float: left;
+	overflow-y: scroll
+}
+.allergies{
+	font-size: 18px;
+	color: #555;
+    font-weight: 300;
+	li{
+		width: 100%;
+    	text-align: center;
+	}
+	.high{color: red;}
+	.med{color: orange;}
+	span{
+		color: initial;
+	}
+}
+.medicines{
+	font-size: 18px;
+	color: #555;
+    font-weight: 300;
+	li{
+		list-style-image: url('../images/tablet.png');
+		width: 100%;
+    	text-align: center;
+	}
+	span{
+		color: initial;
+		padding-left: 20px;
+	}
+}
+//img[src^='https://randomuser.me/api/portraits/']{
+// opacity: 0.5 !important;
+//}

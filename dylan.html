@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Welcome! | Capital One</title>
+	<link rel="stylesheet/less" type="text/css" href="css/reset.css" />
+	<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	<script src="js/less.js" type="text/javascript"></script>
+	
+	
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.2/async.js"></script>
+    <script src="https://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.min.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="css/d3style.css">
+    <link rel="stylesheet" href="css/jquery.tipsy.min.css">
+	<link rel="stylesheet" href="css/percircle.css">
+	
+	<script src="js/percircle.js" type="text/javascript"></script>
+
+	<!-- Custom Theme Style -->
+	<link href="build/css/custom.min.css" rel="stylesheet">
+	
+	<style type="text/css">
+		.pie, .percircle .bar, .gt50 .fill{
+			border-color: #284E91 !important;
+		}
+		.percircle:hover > span{
+			color: #284E91 !important;
+		}
+	</style>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left-icons">
+					<ul class="dash-icons">
+						<li class="selected">
+							<div class="icon-activity"></div>
+						</li>
+						<a href="calendar.html">
+						<li>
+							<div class="icon-calendar"></div>
+						</li>
+						</a>
+						<a href="messages.html">
+						<li>
+							<div class="icon-message"></div>
+						</li>
+						</a>
+						<li>
+							<div class="icon-pref"></div>
+						</li>
+						<a href="nearme.html">
+						<li>
+							<div class="icon-doc"></div>
+						</li>
+						</a>
+					</ul>
+					<div class="adduser"></div>
+				</div>
+				<div class="left_col scroll-view">
+					<div class="primary-photo">
+						<img src="images/photo4.jpeg">
+						<div class="name-overlay">Dylan<br>Young</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+						<ul class="circles">
+							<li><a href="index.html"><img src="images/photo1.jpeg"></a></li>
+							<li><a href="dylan.html"><img src="images/photo4.jpeg"></a></li>
+							<li><a href="eva.html"><img src="images/photo5.jpg"></a></li>
+							<li><a href="bruce.html"><img src="images/photo7.jpg"></a></li>
+							<li><a href="all.html"><img src="images/combo.jpg"></a></li>
+						</ul>
+						<ul class="personal-menu">
+							<li>
+								<div class="big-text">24</div>
+								<div class="small-text">Age</div>
+							</li>
+							<li>
+								<div class="big-text">174<span class="co">lbs</span></div>
+								<div class="small-text">Weight</div>
+							</li>
+							<li>
+								<div class="big-text">183<span class="co">cm</span></div>
+								<div class="small-text">Height</div>
+							</li>
+							<li>
+								<div class="big-text">19.1</div>
+								<div class="small-text">BMI</div>
+							</li>
+							<li>
+								<div class="big-text">O<span class="co">+ve</span></div>
+								<div class="small-text">Blood Group</div>
+							</li>
+							<li>
+								<div class="big-text">10.3<span class="co">%</span></div>
+								<div class="small-text">Fat</div>
+							</li>
+						</ul>
+					</div>
+					<!-- /sidebar menu -->
+
+					<!-- /menu footer buttons -->
+				</div>
+			</div>
+
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+
+				<div class="row">
+					<div class="right-top">
+						<div class="tag-message">Hey Candice,
+							<div class="tagline">It's <span class="great">great</span> to see you today!</div>
+						</div>
+						<button class="add-goal"><span style="font-weight: 400; font-size: 20px; line-height: 0;">+</span> Add Goal</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="health-section section-sleep" style="padding-top: 0; padding-bottom: 0; border-bottom: 0;">
+						<div class="section-title">Sleep tracker</div>
+						<svg id="sleep-graph1" style="margin-top: 20px;"></svg>
+					</div>
+					<div class="health-section section-sleep" style="padding-top: 30; padding-bottom: 0; border-bottom: 0;">
+						<div class="section-title">Heart rate</div>
+						<svg id="heart-graph1" style="margin-top: 20px;"></svg>
+					</div>
+					<div class="health-section section-many">
+						<div class="subsection col-md-6" style="border-right: 1px solid #EEE;">
+							<div class="subsection-container">
+								<div class="section-title">Steps walked</div>
+								<div class="big-number">
+									<div class="feet-icon"></div>
+									6.4K
+									<svg id="walk-graph1"></svg>
+								</div>
+									
+							</div>
+						</div>
+						<div class="subsection col-md-6">
+							<div class="subsection-container">
+								<div class="section-title">Calories Burned</div>
+								<div class="big-number">
+									<div class="calories-icon"></div>
+									537<span class="small-text">cal</span>
+									<svg id="calorie-graph1"></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="health-section section-many">
+						<div class="subsection col-md-6" style="border-right: 1px solid #EEE;">
+							<div class="subsection-container">
+								<div class="section-title">Doctors near me</div>
+								<div class="doc-near-me">
+									<li><img src="https://randomuser.me/api/portraits/men/63.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/63.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/10.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/men/10.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/men/24.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/19.jpg" style="margin-right:0"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/4.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/men/12.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/men/27.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/9.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/27.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/men/26.jpg" style="margin-right:0"></li>
+								</div>
+							</div>
+						</div>
+						<div class="subsection col-md-6">
+							<div class="subsection-container">
+								<div class="section-title">My doctors</div>
+								<div class="my-doc">
+									<li>
+										<img src="https://randomuser.me/api/portraits/men/63.jpg">
+										<div class="notification"></div>
+									</li>
+									<li><img src="https://randomuser.me/api/portraits/women/63.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/women/10.jpg"></li>
+									<li><img src="https://randomuser.me/api/portraits/men/10.jpg" style="margin-right:0"></li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="health-section section-many">
+						<row style="padding: 40px 40px 30px; text-transform: uppercase; font-size: 16px; display: block; opacity: 0.8;">My Goals</row>
+						<div class="subsection col-md-6" style="padding-top: 0px">
+							<div class="subsection-container">
+								<div class="section-title">Lose weight</div>
+								<div id="bluecircle" data-percent="17" class="big"></div>
+							</div>
+						</div>
+						<div class="subsection col-md-6"  style="padding-top: 0px">
+							<div class="subsection-container">
+								<div class="section-title">Calorie intake</div>
+								<div id="bluecircle2" data-percent="68" class="big"></div>
+							</div>
+						</div>
+					</div>
+					<div class="health-section section-sleep" style="padding-top: 30; padding-bottom: 0; border-bottom: 0;">
+						<div class="section-title">Blood pressure</div>
+						<svg id="blood-graph1" style="margin-top: 20px;"></svg>
+					</div>
+				</div>
+			</div>
+			<!-- /page content -->
+
+		</div>
+	</div>
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Add a goal</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Choose an activity:</label>
+						<select>
+							<option>Walk</option>
+							<option>Calories</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Frequency:</label>
+						<select>
+							<option>Daily</option>
+							<option>Weekly</option>
+							<option>Monthly</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Enter the number of steps you wish to walk:</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+					</div>
+
+
+<!--					<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>-->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+<!--	<script src="vendors/jquery/dist/jquery.min.js"></script>-->
+	<script src="js/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.print.css">
+
+	<script src="js/smoothedline1.js"></script>
+    <script src="js/humandata1.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".add-goal").click(function() {
+				$("#myModal").modal('show');
+			});
+		});
+		 $(function(){
+        $("#bluecircle, #bluecircle2").percircle();
+    });
+	</script>
+
+
+	<!-- Bootstrap -->
+	<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- /gauge.js -->
+</body>
+
+</html>

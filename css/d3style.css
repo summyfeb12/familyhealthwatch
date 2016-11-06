@@ -1,0 +1,49 @@
+.line {
+    fill: none;
+/*    stroke: #3ba2c1;*/
+    stroke-width: 2px;
+}
+
+circle {
+/*    fill: #3ba2c1;*/
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+    padding: 3px 0;
+    box-sizing: initial;
+}
+
+.area.firstArea{
+    fill: rgba(79, 182, 178,0.2);
+}
+
+.area.secondArea{
+    fill: rgba(40, 78, 145,0.2);
+}
+
+.area.thirdArea{
+    fill: rgba(220, 97, 0,0.2);
+}
+
+.area.fourthArea{
+    fill: rgba(172, 78, 187,0.2);
+}
+
+.line.firstLine{
+    stroke: #4FB6B2;
+}
+
+.line.secondLine{
+    stroke: #284E91;
+}
+
+.line.thirdLine{
+    stroke: #DC6100;
+}
+
+.line.fourthLine{
+    stroke: #AC4EBB;
+}
