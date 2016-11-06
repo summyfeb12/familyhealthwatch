@@ -44,9 +44,9 @@ async.parallel({
     
     //console.log(results);
     overlaygraphs(results.bpheart, "timestamp", "heartRate", 1, "Cardinal", 1, "#heart-grapho", 1, 1000, 160, "Heart Rate is ", " bpm ");
-    overlaygraphs(results.sleepsum, "date", "timeAsleep", 1, "Cardinal", 1, "#sleep-grapho", 1, 1000, 160, "You slept ", " hours ");
-    overlaygraphs(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#walk-grapho", 0, 120, 20, "You took ", " steps ");
-    overlaygraphs(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#calorie-grapho", 0, 120, 20, "You burned ", " calories! ");
+    overlaygraphs(results.sleepsum, "date", "timeAsleep", 1, "Cardinal", 1, "#sleep-grapho", 1, 1000, 160, "Sleep duration ", " hours ");
+    overlaygraphs(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#walk-grapho", 0, 120, 20, "" , " steps ");
+    overlaygraphs(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#calorie-grapho", 0, 120, 20, "Spent ", " calories! ");
 //    drawwaterfall(results.bpheart, "#blood-graph", 1000, 160);
     
     });

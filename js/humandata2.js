@@ -44,9 +44,9 @@ async.parallel({
     
     //console.log(results);
     drawlinegraph2(results.bpheart, "timestamp", "heartRate", 1, "Cardinal", 1, "#heart-graph2", 1, 1000, 160, "Heart Rate is ", " bpm ","#DC6100", "rgba(220, 97, 0,0.2)", "#DC6100");
-    drawlinegraph2(results.sleepsum, "date", "timeAsleep", 1, "Cardinal", 1, "#sleep-graph2", 1, 1000, 160, "You slept ", " hours ","#DC6100", "rgba(220, 97, 0,0.2)","#DC6100");
-    drawlinegraph2(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#walk-graph2", 0, 120, 20, "You took ", " steps ","#DC6100", "rgba(220, 97, 0,0.2)","#DC6100");
-    drawlinegraph2(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#calorie-graph2", 0, 120, 20, "You burned ", " calories! ","#DC6100", "rgba(220, 97, 0,0.2)","#DC6100");
+    drawlinegraph2(results.sleepsum, "date", "timeAsleep", 1, "Cardinal", 1, "#sleep-graph2", 1, 1000, 160, "Sleep duration is ", " hours ","#DC6100", "rgba(220, 97, 0,0.2)","#DC6100");
+    drawlinegraph2(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#walk-graph2", 0, 120, 20, "", " steps ","#DC6100", "rgba(220, 97, 0,0.2)","#DC6100");
+    drawlinegraph2(results.activities, "startTime", "steps", 1, "Cardinal", 0, "#calorie-graph2", 0, 120, 20, "Spent ", " calories! ","#DC6100", "rgba(220, 97, 0,0.2)","#DC6100");
     drawwaterfall2(results.bpheart, "#blood-graph2", 1000, 160,"#DC6100", "rgba(220, 97, 0,0.2)");
     
     });
